@@ -4,36 +4,32 @@ using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using UnityEngine.UI;
 
-public class PlaneIndicatorFW : MonoBehaviour
+public class PlaceIndicatorFW : MonoBehaviour
 {
     private ARRaycastManager raycastManager;
     private GameObject indicator;
     private List<ARRaycastHit> hits = new List<ARRaycastHit>();
-    public GameObject MotherBoard;
-    public GameObject rAM;
-    public GameObject pc;
-    public GameObject cpuToDisable;
-    public GameObject cpuTohide;
-    public GameObject Rams;
-    public GameObject slider;
+    public GameObject CoolerOB;
+    public GameObject cooler;
+    public GameObject pc; 
+    public GameObject powersupply;
+    public GameObject PowerSupplyOB;
     public GameObject Replay;
-    public GameObject Next;
+    public GameObject Next; 
 
 
     void Start()
     {
         Replay.SetActive(false);
         Next.SetActive(false);
+        cooler.SetActive(false);
+        CoolerOB.SetActive(false);
+        pc.SetActive(false);
+        powersupply.SetActive(false);
+        PowerSupplyOB.SetActive(false); 
         raycastManager = FindObjectOfType<ARRaycastManager>();
         indicator = transform.GetChild(0).gameObject;
         indicator.SetActive(false);
-        rAM.SetActive(false);
-        MotherBoard.SetActive(false);
-        pc.SetActive(false);
-        cpuToDisable.SetActive(false);
-        cpuTohide.SetActive(false);
-        Rams.SetActive(false);
-        slider.SetActive(false);
 
     }
 
