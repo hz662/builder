@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.46169513, g: 0.5124164, b: 0.58993304, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -527,8 +527,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -259, y: -788}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -247.5, y: -802.3772}
+  m_SizeDelta: {x: 171.5, y: 44.3772}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &304166078
 MonoBehaviour:
@@ -817,8 +817,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 281, y: -796}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 278.9463, y: -814.485}
+  m_SizeDelta: {x: 157.9463, y: 48.485}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &445733553
 MonoBehaviour:
@@ -1351,8 +1351,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12, y: -797}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 7.8922, y: -811.3772}
+  m_SizeDelta: {x: 155.8922, y: 44.3772}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &829783151
 MonoBehaviour:
@@ -1694,6 +1694,7 @@ MonoBehaviour:
   placeButton: {fileID: 829783149}
   cooler: {fileID: 304166076}
   powersupply: {fileID: 445733551}
+  coolerobject: {fileID: 1163909557}
   coolerToDisable: {fileID: 304166078}
   powersupplyToDisable: {fileID: 445733553}
 --- !u!114 &1008742804
@@ -2601,8 +2602,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -348, y: 1030}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -332.27643, y: 1024.1035}
+  m_SizeDelta: {x: 184.958, y: 35.3846}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1657386226
 MonoBehaviour:
