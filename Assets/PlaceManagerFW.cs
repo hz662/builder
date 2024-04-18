@@ -10,7 +10,7 @@ public class PlaceManagerFW : MonoBehaviour
     public GameObject cooler;
     public GameObject powersupply;
     private GameObject newPlacedObject;
-    /*public GameObject motherobject;*/
+    public GameObject coolerobject;
     public Button coolerToDisable;
     public Button powersupplyToDisable;
     private bool isRotating = false;
@@ -19,22 +19,21 @@ public class PlaceManagerFW : MonoBehaviour
     void Start()
     {
         placeIndicator = FindObjectOfType<PlaceIndicatorFW>();
-        /*motherobject.SetActive(false); */
+        coolerobject.SetActive(false);
         /*coolerToDisable.interactable = false;*/
         powersupplyToDisable.interactable = false;
     }
 
     public void ClickToPlace()
     {
-
-        cooler.SetActive(true);
-        powersupply.SetActive(true);
-        placeButton.gameObject.SetActive(false);
         objectToPlace.SetActive(true);
         Quaternion desiredRotation = Quaternion.Euler(0, 270, -68);
         objectToPlace.transform.position = placeIndicator.transform.position;
         objectToPlace.transform.rotation = desiredRotation;
         placeIndicator.gameObject.SetActive(false);
+        cooler.SetActive(true);
+        powersupply.SetActive(true);
+        placeButton.gameObject.SetActive(false);
     }
 
     void Update()
