@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.UI;
 public class HaroonPlace : MonoBehaviour
 {
-    public GameObject slider;
 
     private HaroonIndicator HaroonIndicator;
     public GameObject objectToPlace;
@@ -32,7 +31,6 @@ public class HaroonPlace : MonoBehaviour
     public void ClickToPlace()
     {
 
-        //slider.SetActive(true); 
         objectToPlace.SetActive(true);
         Quaternion desiredRotation = Quaternion.Euler(0, 270, -68);
         objectToPlace.transform.position = HaroonIndicator.transform.position;
