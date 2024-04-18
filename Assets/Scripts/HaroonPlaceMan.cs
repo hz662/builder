@@ -1,31 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using UnityEngine.UI;
 public class HaroonPlace : MonoBehaviour
 {
-    public GameObject slider;
+
     private HaroonIndicator HaroonIndicator;
     public GameObject objectToPlace;
     public GameObject placeButton;
+    public GameObject ssdButton;
+    public GameObject GpuButton;
+    public GameObject backbtn;
+    public GameObject ssd;
+    public GameObject Gpu;
     private bool isRotating = false;
     private Vector2 prevTouchPos;
     private float rotationSpeed = 0.5f;
     void Start()
     {
         HaroonIndicator = FindObjectOfType<HaroonIndicator>();
+        ssdButton.SetActive(false);
+        GpuButton.SetActive(false);
+        backbtn.SetActive(false);
+        Gpu.SetActive(false);
+        ssd.SetActive(false);
+
     }
 
     public void ClickToPlace()
     {
 
-        //slider.SetActive(true); 
         objectToPlace.SetActive(true);
         Quaternion desiredRotation = Quaternion.Euler(0, 270, -68);
         objectToPlace.transform.position = HaroonIndicator.transform.position;
-        objectToPlace.transform.rotation = desiredRotation;
         HaroonIndicator.gameObject.SetActive(false);
         placeButton.gameObject.SetActive(false);
+        ssdButton.SetActive(true);
+        GpuButton.SetActive(true);
+        backbtn.SetActive(true);
     }
 
     void Update()
