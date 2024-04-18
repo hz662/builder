@@ -166,7 +166,7 @@ PlayerSettings:
   androidMinAspectRatio: 1
   applicationIdentifier:
     Android: com.DefaultCompany.FawadsPart
-    Standalone: com.DefaultCompany.builder
+    Standalone: com.DefaultCompany.FawadsPart
   buildNumber:
     Bratwurst: 0
     Standalone: 0
